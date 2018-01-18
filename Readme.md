@@ -16,23 +16,22 @@ $ bash download_best_model.sh
 $ python3 hand_train.py [data_path] [selection_sets] [restore_exist_path] [restore_bbx_path] [save_exist_path] [save_bbx_path]
 ```
 
-<br/>
 
-[data_path]: 資料位置，其架構如下
+以下為參數說明
 
-<br/>
+data_path: 資料位置，其架構如下
 
-![image](/asset/data.png)
+![image](/asset/data.png | width=60)
 
-[selection_sets]: 有 s001~s009、air、book，輸入時請以*號相連
+selection_sets: 有 s001~s009、air、book，輸入時請以*號相連
 
-[restore_exist_path]: 要 restore 的 exist model path，不 restore 請輸入 None
+restore_exist_path: 要 restore 的 exist model path，不 restore 請輸入 None
 
-[restore_bbx_path]: 要 restore 的 bbx model path，不 restore 請輸入 None
+restore_bbx_path: 要 restore 的 bbx model path，不 restore 請輸入 None
 
-[save_exist_path]: 要 save 的 exist model path
+save_exist_path: 要 save 的 exist model path
 
-[save_bbx_path]: 要 save 的 bbx model path
+save_bbx_path: 要 save 的 bbx model path
 
 #### Example
 
