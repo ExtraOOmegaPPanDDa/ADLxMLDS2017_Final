@@ -22,7 +22,7 @@ $ python3 hand_train.py [data_path] [selection_sets] [restore_exist_path] [resto
 
 <br/>
 
-![image](https://github.com//ExtraOOmegaPPanDDa/ADLxMLDS2017_Final/blob/master/asset/data.jpg)
+![image](https://github.com//ExtraOOmegaPPanDDa/ADLxMLDS2017_Final/blob/master/asset/data.png)
 
 [selection_sets]: 有 s001~s009、air、book，輸入時請以*號相連
 
