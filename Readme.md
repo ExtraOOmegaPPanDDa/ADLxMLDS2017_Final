@@ -1,6 +1,22 @@
 # NTU ADLxMLDS2017 Final
 ## HTC Egocentric Hand Detection
 
+Task：辨別第一人稱視角的手部位置
+
+<img src="https://github.com/ExtraOOmegaPPanDDa/ADLxMLDS2017_Final/blob/master/asset/1_bbox.png" width="300">
+
+<img src="https://github.com/ExtraOOmegaPPanDDa/ADLxMLDS2017_Final/blob/master/asset/3_bbox.png" width="300">
+
+我們採用的模型如下
+
+<img src="https://github.com/ExtraOOmegaPPanDDa/ADLxMLDS2017_Final/blob/master/asset/method.png" width="300">
+
+
+其中 CNN 為經 ImageNet Classification pretrain 過的 **Inception Resnet v2**
+
+<img src="https://github.com/ExtraOOmegaPPanDDa/ADLxMLDS2017_Final/blob/master/asset/Inception_Resnet_v2.png.png" width="600">
+
+
 ---
 ### 0. model download and pkg install
 
@@ -32,7 +48,7 @@ data_path: 資料位置，其架構如下
 
 <img src="https://github.com/ExtraOOmegaPPanDDa/ADLxMLDS2017_Final/blob/master/asset/data_tree.png" width="200">
 
-selection_sets: 有 s001~s009、air、book，輸入時請以*號相連
+selection_sets: 有 s001~s009、air、book，輸入時請以\*號相連
 
 restore_exist_path: 要 restore 的 exist model path，不 restore 請輸入 None
 
@@ -79,25 +95,29 @@ $ python3 hand_test.py ./hand_exist_model.h5 ./hand_bbx_model.h5
 ```
 
 ---
-### 3. 實驗環境描述
----
+### 3. 實驗環境描述（所需資料、系統、所需所有套件版本等）
 
 資料：如第 1. 所示，需含有 DeepQ-Synth-Hand-01、DeepQ-Synth-Hand-02、DeepQ-Vivepaper 在 data_path
 
 系統：Ubuntu 16.04.3 LTS
 
-GPU：GeForce GTX 1080
+GPU：GeForce GTX 1080 ram 4G swap 32G (ssd)
+
 
 套件版本：
 
-pkg | version
 ---- | ---
+python | 3.5
+cuda | 8.0
+cudnn | 6.0
 keras | 2.1.2
 tensorflow-gpu | 1.4.1
 imageio | 2.2.0
 scikit-image | 0.13.1
 opencv-python | 3.4.0.12
 
+
+---
 
 
 
