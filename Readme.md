@@ -2,10 +2,19 @@
 ## HTC Egocentric Hand Detection
 
 ---
-### 0. download 我們的 best model
+### 0. model download and pkg install
+
+### download 我們的 best model
 
 ```
 $ bash download_best_model.sh
+```
+
+
+### 安裝相關套件
+
+```
+$ pip3 install -r requirements3.txt
 ```
 
 
@@ -17,7 +26,7 @@ $ python3 hand_train.py [data_path] [selection_sets] [restore_exist_path] [resto
 ```
 
 
-以下為參數說明
+以下為參數說明：
 
 data_path: 資料位置，其架構如下
 
@@ -47,6 +56,18 @@ $ python3 hand_train.py ../data/ air*book None None ./train_exist_model.h5 ./tra
 $ python3 hand_test.py [exist_model_path] [bbx_model_path]
 ```
 
+以下為參數說明：
+
+exist_model_path: exist model 的位置
+
+bbx_model_path: bbx model 的位置
+
+
+另外
+
+Testing 的部分，HTC 有提供 judger_hand API，安裝後即可 access testing 資料 
+
+
 #### Example
 
 ```
@@ -56,3 +77,5 @@ $ python3 hand_test.py ./hand_exist_model.h5 ./hand_bbx_model.h5
 ---
 ### 3. 實驗環境描述
 ---
+
+
