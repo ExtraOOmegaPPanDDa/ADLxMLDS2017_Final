@@ -48,7 +48,7 @@ data_path: 資料位置，其架構如下
 
 <img src="https://github.com/ExtraOOmegaPPanDDa/ADLxMLDS2017_Final/blob/master/asset/data_tree.png" width="200">
 
-selection_sets: 有 s001~s009、air、book，輸入時請以\*號相連
+selection_sets: 有 s001~s009、air、book，選擇要 train 的資料集，有多個時請以\*號相連
 
 restore_exist_path: 要 restore 的 exist model path，不 restore 請輸入 None
 
