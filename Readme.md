@@ -48,6 +48,12 @@ $ python3 hand_train.py ../data/ air*book None None ./train_exist_model.h5 ./tra
 $ python3 hand_test.py [exist_model_path] [bbx_model_path]
 ```
 
+#### Example
+
+```
+$ python3 hand_test.py ./hand_exist_model.h5 ./hand_bbx_model.h5
+```
+
 ---
 ### 3. 實驗環境描述
 ---
