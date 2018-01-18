@@ -2,7 +2,7 @@
 ## HTC Egocentric Hand Detection
 
 ---
-0. download 我們的 best model
+### 0. download 我們的 best model
 
 ```
 $ bash download_best_model.sh
@@ -10,7 +10,7 @@ $ bash download_best_model.sh
 
 
 ---
-1. 如何跑 training
+### 1. 如何跑 training
 
 ```
 $ python3 hand_train.py [data_path] [selection_sets] [restore_exist_path] [restore_bbx_path] [save_exist_path] [save_bbx_path]
@@ -22,7 +22,7 @@ $ python3 hand_train.py [data_path] [selection_sets] [restore_exist_path] [resto
 
 <br/>
 
-![image](https://github.com//ExtraOOmegaPPanDDa/ADLxMLDS2017_Final/blob/master/asset/data.png)
+![image](https://github.com//ExtraOOmegaPPanDDa//ADLxMLDS2017_Final//blob//master//asset//data.png)
 
 [selection_sets]: 有 s001~s009、air、book，輸入時請以*號相連
 
@@ -34,7 +34,7 @@ $ python3 hand_train.py [data_path] [selection_sets] [restore_exist_path] [resto
 
 [save_bbx_path]: 要 save 的 bbx model path
 
-Example
+#### Example
 
 ```
 $ python3 hand_train.py ../data/ air*book None None ./train_exist_model.h5 ./train_bbx_model.h5
@@ -42,12 +42,12 @@ $ python3 hand_train.py ../data/ air*book None None ./train_exist_model.h5 ./tra
 
 
 ---
-2. 如何跑 testing
+### 2. 如何跑 testing
 
 ```
 $ python3 hand_test.py [exist_model_path] [bbx_model_path]
 ```
 
 ---
-3. 實驗環境描述
+### 3. 實驗環境描述
 ---
