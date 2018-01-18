@@ -3,18 +3,18 @@
 
 Task：辨別第一人稱視角的手部位置
 
-<img src="https://github.com/ExtraOOmegaPPanDDa/ADLxMLDS2017_Final/blob/master/asset/1_bbox.png" width="300">
-
-<img src="https://github.com/ExtraOOmegaPPanDDa/ADLxMLDS2017_Final/blob/master/asset/3_bbox.png" width="300">
+sir | book
+---- | ---
+<img src="https://github.com/ExtraOOmegaPPanDDa/ADLxMLDS2017_Final/blob/master/asset/1_bbox.png" width="300"> | <img src="https://github.com/ExtraOOmegaPPanDDa/ADLxMLDS2017_Final/blob/master/asset/3_bbox.png" width="300">
 
 我們採用的模型如下
 
-<img src="https://github.com/ExtraOOmegaPPanDDa/ADLxMLDS2017_Final/blob/master/asset/method.png" width="300">
+<img src="https://github.com/ExtraOOmegaPPanDDa/ADLxMLDS2017_Final/blob/master/asset/method.png" width="600">
 
 
 其中 CNN 為經 ImageNet Classification pretrain 過的 **Inception Resnet v2**
 
-<img src="https://github.com/ExtraOOmegaPPanDDa/ADLxMLDS2017_Final/blob/master/asset/Inception_Resnet_v2.png.png" width="600">
+<img src="https://github.com/ExtraOOmegaPPanDDa/ADLxMLDS2017_Final/blob/master/asset/Inception_Resnet_v2.png" width="600">
 
 
 ---
