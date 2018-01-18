@@ -1,15 +1,7 @@
 #!/usr/bin/env python3
 # -*- coding: utf-8 -*-
 """
-Created on Thu Jan 18 13:41:19 2018
-
-@author: HSIN
-"""
-
-#!/usr/bin/env python3
-# -*- coding: utf-8 -*-
-"""
-Created on Sat Jan 13 00:01:14 2018
+Created on Thu Jan 18 13:23:08 2018
 
 @author: HSIN
 """
@@ -58,6 +50,12 @@ synth02_sets = ['s005','s006','s007','s008','s009']
 vive_sets = ['air','book']
 
 selection_sets = sys.argv[2].split('*')
+
+for the_set in selection_sets:
+    if the_set not in synth01_sets + synth02_sets + vive_sets:
+        print('selection set assigned error, please check again')
+        print('the selection:', synth01_sets + synth02_sets + vive_sets)
+        sys.exit()
 
 restore_exist_path = sys.argv[3]
 restore_bbx_path = sys.argv[4]

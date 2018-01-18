@@ -61,7 +61,7 @@ save_bbx_path: 要 save 的 bbx model path
 #### Example
 
 ```
-$ python3 hand_train.py ../data/ s0001*s0002*s0003*s0004 None None ./synth_exist_model.h5 ./synth_bbx_model.h5
+$ python3 hand_train.py ../data/ s001*s002*s003*s004 None None ./synth_exist_model.h5 ./synth_bbx_model.h5
 ```
 
 
