@@ -16,21 +16,13 @@ $ bash download_best_model.sh
 $ python3 hand_train.py [data_path] [selection_sets] [restore_exist_path] [restore_bbx_path] [save_exist_path] [save_bbx_path]
 ```
 
+<br/>
 
 [data_path]: 資料位置，其架構如下
 
+<br/>
 
-.
-├── DeepQ-Synth-Hand-01
-│   ├── data
-│   └── example
-├── DeepQ-Synth-Hand-02
-│   └── data
-└── DeepQ-Vivepaper
-    ├── data
-    ├── example
-    └── frame
-
+![image](https://github.com//ExtraOOmegaPPanDDa/ADLxMLDS2017_Final/blob/master/asset/data.jpg)
 
 [selection_sets]: 有 s001~s009、air、book，輸入時請以*號相連
 
