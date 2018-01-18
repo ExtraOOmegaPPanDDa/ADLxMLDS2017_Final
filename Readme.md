@@ -45,9 +45,13 @@ save_bbx_path: 要 save 的 bbx model path
 #### Example
 
 ```
-$ python3 hand_train.py ../data/ air*book None None ./train_exist_model.h5 ./train_bbx_model.h5
+$ python3 hand_train.py ../data/ s0001*s0002*s0003*s0004 None None ./synth_exist_model.h5 ./synth_bbx_model.h5
 ```
 
+
+```
+$ python3 hand_train.py ../data/ air*book None None ./synth_exist_model.h5 ./synth_bbx_model.h5 ./vive_exist_model.h5 ./vive_bbx_model.h5
+```
 
 ---
 ### 2. 如何跑 testing
@@ -77,5 +81,24 @@ $ python3 hand_test.py ./hand_exist_model.h5 ./hand_bbx_model.h5
 ---
 ### 3. 實驗環境描述
 ---
+
+資料：如第 1. 所示，需含有 DeepQ-Synth-Hand-01、DeepQ-Synth-Hand-02、DeepQ-Vivepaper 在 data_path
+
+系統：Ubuntu 16.04.3 LTS
+
+GPU：GeForce GTX 1080
+
+套件版本：
+
+pkg | version
+---- | ---
+keras | 2.1.2
+tensorflow-gpu | 1.4.1
+imageio | 2.2.0
+scikit-image | 0.13.1
+opencv-python | 3.4.0.12
+
+
+
 
 
