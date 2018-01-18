@@ -92,7 +92,7 @@ def inference(exist_model, bbx_model, img_input_path, img_dump_path, lab_dump_pa
     
     pred_lab = pred_lab.astype('int') 
     
-    print('BBX', pred_lab)
+    print('BBX:', pred_lab)
         
     answer_L = list(pred_lab[:4])
     answer_R = list(pred_lab[4:])    
