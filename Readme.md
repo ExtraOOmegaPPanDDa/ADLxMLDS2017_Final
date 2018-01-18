@@ -3,7 +3,7 @@
 
 Task：辨別第一人稱視角的手部位置
 
-sir | book
+air | book
 ---- | ---
 <img src="https://github.com/ExtraOOmegaPPanDDa/ADLxMLDS2017_Final/blob/master/asset/1_bbox.png" width="300"> | <img src="https://github.com/ExtraOOmegaPPanDDa/ADLxMLDS2017_Final/blob/master/asset/3_bbox.png" width="300">
 
@@ -106,6 +106,7 @@ GPU：GeForce GTX 1080 ram 4G swap 32G (ssd)
 
 套件版本：
 
+pkg | version
 ---- | ---
 python | 3.5
 cuda | 8.0
