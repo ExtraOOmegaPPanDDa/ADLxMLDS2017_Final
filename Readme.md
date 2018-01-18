@@ -7,7 +7,7 @@ air | book
 ---- | ---
 <img src="https://github.com/ExtraOOmegaPPanDDa/ADLxMLDS2017_Final/blob/master/asset/1_bbox.png" width="300"> | <img src="https://github.com/ExtraOOmegaPPanDDa/ADLxMLDS2017_Final/blob/master/asset/3_bbox.png" width="300">
 
-我們採用的模型如下
+我們採用的模型如下，最終會有一個 exist model 用來辨別左右手的存在，和一個 bbx model 來畫出左右手的 bounding box
 
 <img src="https://github.com/ExtraOOmegaPPanDDa/ADLxMLDS2017_Final/blob/master/asset/method.png" width="600">
 
@@ -66,7 +66,7 @@ $ python3 hand_train.py ../data/ s0001*s0002*s0003*s0004 None None ./synth_exist
 
 
 ```
-$ python3 hand_train.py ../data/ air*book None None ./synth_exist_model.h5 ./synth_bbx_model.h5 ./vive_exist_model.h5 ./vive_bbx_model.h5
+$ python3 hand_train.py ../data/ air*book ./synth_exist_model.h5 ./synth_bbx_model.h5 ./vive_exist_model.h5 ./vive_bbx_model.h5
 ```
 
 ---
