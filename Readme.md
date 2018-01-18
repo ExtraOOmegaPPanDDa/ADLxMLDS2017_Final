@@ -16,7 +16,21 @@ $ bash download_best_model.sh
 $ python3 hand_train.py [data_path] [selection_sets] [restore_exist_path] [restore_bbx_path] [save_exist_path] [save_bbx_path]
 ```
 
-[data_path]: 資料位置
+
+[data_path]: 資料位置，其架構如下
+
+
+.
+├── DeepQ-Synth-Hand-01
+│   ├── data
+│   └── example
+├── DeepQ-Synth-Hand-02
+│   └── data
+└── DeepQ-Vivepaper
+    ├── data
+    ├── example
+    └── frame
+
 
 [selection_sets]: 有 s001~s009、air、book，輸入時請以*號相連
 
@@ -27,6 +41,12 @@ $ python3 hand_train.py [data_path] [selection_sets] [restore_exist_path] [resto
 [save_exist_path]: 要 save 的 exist model path
 
 [save_bbx_path]: 要 save 的 bbx model path
+
+Example
+
+```
+$ python3 hand_train.py ../data/ air*book None None ./train_exist_model.h5 ./train_bbx_model.h5
+```
 
 
 ---
