@@ -21,7 +21,7 @@ $ python3 hand_train.py [data_path] [selection_sets] [restore_exist_path] [resto
 
 data_path: 資料位置，其架構如下
 
-![image](/asset/data.png | width=60)
+![image](/asset/data.png | width=100)
 
 selection_sets: 有 s001~s009、air、book，輸入時請以*號相連
 
